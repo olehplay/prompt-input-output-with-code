@@ -1,0 +1,127 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css"
+/>
+<style>
+  .container {
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid #4f5e77;
+    background-color: white;
+    font-family: inherit;
+  }
+
+  .divider {
+    background-color: #4f5e77;
+    height: 4px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 10px;
+  }
+
+  .input {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    font-family: "Hind Siliguri", sans-serif;
+    line-height: 22px;
+    font-size: 100%;
+    padding: 8px 0 16px;
+  }
+
+  .language-css .token.string,
+  .style .token.string,
+  .token.entity,
+  .token.operator,
+  .token.url,
+  .token.function,
+  .token {
+    background: none !important;
+    font-size: 16px !important;
+  }
+  code {
+    color: crimson;
+    background-color: #e2e2e2;
+    padding-left: 4px;
+    padding-right: 5px;
+    border-radius: 4px;
+    font-family: Monaco, Ubuntu Mono, sans-serif;
+    font-size: 16px !important;
+  }
+</style>
+
+<div class="container">
+  <div class="input">
+    <h2 class="title">Input Prompt:</h2>
+
+    <!-- =================== Input Content =================== -->
+    <p class="content">
+      Generate a short story about a young astronaut who discovers a hidden
+      alien civilization on a distant planet.
+    </p>
+    <p class="content">ewfrgeth</p>
+    <p class="content">dafsgdb</p>
+  </div>
+  <hr class="divider" />
+  <div class="output">
+    <h2 class="title">Generated Output:</h2>
+
+    <!-- =================== Output Content =================== -->
+    <p class="content">
+      As the young astronaut, Alex, stepped onto the barren surface of the
+      distant planet, they couldn't help but feel a rush of excitement mixed
+      with trepidation. They had trained for years for this moment, but nothing
+      could have prepared them for what they were about to discover.
+    </p>
+    <p class="content">
+      As the young astronaut, Alex, stepped onto the barren surface of the
+      distant planet, they couldn't help but feel a rush of excitement mixed
+      with trepidation. They had trained for years for this moment, but nothing
+      could have prepared them for what they were about to discover.
+    </p>
+    <pre><code class="language-python">
+class BankAccount:
+    def __init__(self, account_holder, initial_balance=0):
+        self.account_holder = account_holder
+        self.balance = initial_balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            return f"Deposited ${amount}. Current balance: ${self.balance}"
+        else:
+            return "Invalid deposit amount."
+
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount
+            return f"Withdrew ${amount}. Current balance: ${self.balance}"
+        else:
+            return "Insufficient funds or invalid withdrawal amount."
+
+    def check_balance(self):
+        return f"Account balance for {self.account_holder}: ${self.balance}"
+
+# Usage example:
+account1 = BankAccount("John Doe", 1000)
+print(account1.deposit(500))
+print(account1.withdraw(200))
+print(account1.check_balance())
+      </code></pre>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
